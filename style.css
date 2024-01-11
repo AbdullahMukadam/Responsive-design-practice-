@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  width:100%;
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.nav-left h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.nav-center{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-center a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-right button {
+  padding: 10px 8px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+.mid{
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  
+  width: 90%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-left{
+  height: 80%;
+  width: 45%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/*.hero-right{
+  height: 80%;
+  width: 45%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+.card{
+  height: 85%;
+  width: 90%;
+  background-color: darkblue;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-details {
+  height: 90%;
+  width: 90%;
+ /* background-color: red;*/
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-details img {
+  height: 60%;
+  width: 80%;
+  object-fit: cover;
+  object-position: center ;
+  border-radius: 20px;
+}
+
+.card-details p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  padding: 10px 20px;
+}
+.section{
+  width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-1{
+  height: 90%;
+  width: 30%;
+  display: flex;
+  flex-direction: row ;
+  padding: 10px;
+}
+.section-1 li {
+  list-style: none;
+}
+.section-1 a {
+  text-decoration: none;
+  color: grey;
+  font-weight:300;
+  font-size: 15px;
+}
+.container{
+ margin: 0 20px;
+}
+.section-2{
+  height: 90%;
+  width: 30%;
+  display: flex;
+  flex-direction: row ;
+  padding: 10px;
+}
+.section-2 li {
+  list-style: none;
+}
+.section-2 a {
+  text-decoration: none;
+  color: grey;
+  font-weight:300;
+  font-size: 15px;
+}
+.section-3{
+  height: 90%;
+  width: 30%;
+  display: flex;
+  flex-direction: row ;
+  padding: 10px;
+}
+.section-3 li {
+  list-style: none;
+}
+.section-3 a {
+  text-decoration: none;
+  color: grey;
+  font-weight:300;
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+ .hero{
+   width: 90%;
+  /* height: 90vh;*/
+ }
+.hero-left{
+  width: 45%;
+  height: 70vh;
+  margin-bottom: 20px;
+}
+.card{
+  height: 60%;
+}
+.card-details{
+  padding: 0;
+  display: block;
+}
+.card-details img{
+  margin-left: 25px;
+  object-position: center;
+}
+}
+
+@media only screen and (min-width: 600px) {
+ .card{
+   height: 60%;
+ }
+ .card-details{
+   padding: 0;
+   
+ }
+.card-details img{
+  margin-left: 15px;
+}
+.card-details p{
+  text-align: center;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.nav-center{
+  display:none;
+}
+.mid{
+  padding: 5px 5px;
+}
+.hero{
+  width: 95%;
+  display:block;
+  padding-left: 33px;
+}
+.hero-left{
+  width: 95%;
+  height: 70vh;
+  margin-bottom: 20px;
+}
+.hero-right{
+  width: 95%;
+  height: 70vh;
+}
+.card-details{
+  padding: 0;
+  display: block;
+}
+.card-details img{
+  margin-left: 25px;
+}
+.footer{
+  padding: 10px 0;
+}
+.section{
+  flex-direction: row;
+  gap: 20px;
+}
+.container{
+  margin:0 5px;
+}
+/*.section-1{
+  padding: 4px;
+}
+.section-2{
+  padding: 4px;
+}
+.section-3{
+  padding:4px;
+}*/
+}
